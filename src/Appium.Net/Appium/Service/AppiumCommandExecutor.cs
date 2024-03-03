@@ -67,7 +67,7 @@ namespace OpenQA.Selenium.Appium.Service
                 }
                 return result;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 HandleCommandException(commandToExecute);
 

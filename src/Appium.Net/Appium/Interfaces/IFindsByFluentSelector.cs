@@ -34,6 +34,6 @@ namespace OpenQA.Selenium.Appium.Interfaces
         /// <param name="by">is a string selector</param>
         /// <param name="value">is a value of the given selector</param>
         /// <returns>a list of elements</returns>
-        IReadOnlyCollection<W> FindElements(string selector, string value);
+        IReadOnlyCollection<W> FindElements(string by, string value);
     }
 }

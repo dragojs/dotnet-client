@@ -19,20 +19,19 @@ namespace OpenQA.Selenium.Appium.Interfaces
     public interface ITouchAction
     {
         /// <summary>
-        /// Press at the specified location in the element until the  context menu appears.
+        /// Long press at the location in the element.
         /// </summary>
         /// <param name="element">The target element.</param>
         /// <param name="x">The x coordinate relative to the element.</param>
         /// <param name="y">The y coordinate relative to the element.</param>
         /// <returns>A self-reference to this <see cref="ITouchAction"/>.</returns>
-        ITouchAction LongPress(IWebElement el, double? x = null, double? y = null);
+        ITouchAction LongPress(IWebElement element, double? x = null, double? y = null);
 
         /// <summary>
-        /// Press at the specified location until the  context menu appears.
+        /// Long press at the location specified by the coordinates.
         /// </summary>
-        /// <param name="element">The target element.</param>
-        /// <param name="x">The x coordinate relative to the element.</param>
-        /// <param name="y">The y coordinate relative to the element.</param>
+        /// <param name="x">The x absolute coordinate.</param>
+        /// <param name="y">The y absolute coordinate.</param>
         /// <returns>A self-reference to this <see cref="ITouchAction"/>.</returns>
         ITouchAction LongPress(double x, double y);
 

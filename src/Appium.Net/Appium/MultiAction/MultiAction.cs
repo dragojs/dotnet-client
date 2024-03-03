@@ -26,9 +26,9 @@ namespace OpenQA.Selenium.Appium.MultiTouch
         private IPerformsTouchActions TouchActionPerformer;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="MultiTouchAction"/> class.
+        /// Initializes a new instance of the <see cref="MultiAction"/> class.
         /// </summary>
-        /// <param name="driver">The <see cref="IWebDriver"/> the driver to be used.</param>
+        /// <param name="touchActionPerformer">The <see cref="IWebDriver"/> the driver to be used.</param>
         public MultiAction(IPerformsTouchActions touchActionPerformer)
         {
             this.TouchActionPerformer = touchActionPerformer;

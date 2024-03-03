@@ -97,8 +97,8 @@ namespace OpenQA.Selenium.Appium.MultiTouch
         /// Press at the specified location in the element until the  context menu appears.
         /// </summary>
         /// <param name="element">The target element.</param>
-        /// <param name=x>The x coordinate relative to the element.</param>
-        /// <param name=y>The y coordinate relative to the element.</param>
+        /// <param name="x">The x coordinate relative to the element.</param>
+        /// <param name="y">The y coordinate relative to the element.</param>
         /// <returns>A self-reference to this <see cref="ITouchAction"/>.</returns>
         public ITouchAction LongPress(IWebElement element, double? x = null, double? y = null)
         {
@@ -112,11 +112,10 @@ namespace OpenQA.Selenium.Appium.MultiTouch
         }
 
         /// <summary>
-        /// Press at the specified location in the element until the  context menu appears.
+        /// Long press at the location specified by the coordinates.
         /// </summary>
-        /// <param name="element">The target element.</param>
-        /// <param name=x>The x coordinate relative to the element.</param>
-        /// <param name=y>The y coordinate relative to the element.</param>
+        /// <param name="x">The x absolute coordinate.</param>
+        /// <param name="y">The y absolute coordinate.</param>
         /// <returns>A self-reference to this <see cref="ITouchAction"/>.</returns>
         public ITouchAction LongPress(double x, double y)
         {
@@ -132,8 +131,8 @@ namespace OpenQA.Selenium.Appium.MultiTouch
         /// Move to the specified location in the element.
         /// </summary>
         /// <param name="element">The target element.</param>
-        /// <param name=x>The x coordinate relative to the element.</param>
-        /// <param name=y>The y coordinate relative to the element.</param>
+        /// <param name="x">The x coordinate relative to the element.</param>
+        /// <param name="y">The y coordinate relative to the element.</param>
         /// <returns>A self-reference to this <see cref="ITouchAction"/>.</returns>
         public ITouchAction MoveTo(IWebElement element, double? x = null, double? y = null)
         {
@@ -149,8 +148,8 @@ namespace OpenQA.Selenium.Appium.MultiTouch
         /// <summary>
         /// Move to the specified location.
         /// </summary>
-        /// <param name=x>The x coordinate.</param>
-        /// <param name=y>The y coordinate.</param>
+        /// <param name="x">The x coordinate.</param>
+        /// <param name="y">The y coordinate.</param>
         /// <returns>A self-reference to this <see cref="ITouchAction"/>.</returns>
         public ITouchAction MoveTo(double x, double y)
         {
@@ -166,8 +165,8 @@ namespace OpenQA.Selenium.Appium.MultiTouch
         /// Press at the specified location in the element.
         /// </summary>
         /// <param name="element">The target element.</param>
-        /// <param name=x>The x coordinate relative to the element.</param>
-        /// <param name=y>The y coordinate relative to the element.</param>
+        /// <param name="x">The x coordinate relative to the element.</param>
+        /// <param name="y">The y coordinate relative to the element.</param>
         /// <returns>A self-reference to this <see cref="ITouchAction"/>.</returns>
         public ITouchAction Press(IWebElement element, double? x = null, double? y = null)
         {
@@ -183,8 +182,8 @@ namespace OpenQA.Selenium.Appium.MultiTouch
         /// <summary>
         /// Press at the specified location.
         /// </summary>
-        /// <param name=x>The x coordinate.</param>
-        /// <param name=y>The y coordinate.</param>
+        /// <param name="x">The x coordinate.</param>
+        /// <param name="y">The y coordinate.</param>
         /// <returns>A self-reference to this <see cref="ITouchAction"/>.</returns>
         public ITouchAction Press(double x, double y)
         {

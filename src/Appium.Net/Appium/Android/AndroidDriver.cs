@@ -201,7 +201,7 @@ namespace OpenQA.Selenium.Appium.Android
 
         #endregion Connection Type
 
-        #region Device Kesys
+        #region Device Keys
 
         public void PressKeyCode(int keyCode, int metastate = -1) =>
             AppiumCommandExecutionHelper.PressKeyCode(this, keyCode, metastate);

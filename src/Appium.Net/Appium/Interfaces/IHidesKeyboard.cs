@@ -39,7 +39,7 @@ namespace OpenQA.Selenium.Appium.Interfaces
         /// <summary>
         /// Whether or not the soft keyboard is shown
         /// </summary>
-        /// <returns><see cref="true"/> if keyboard is shown, <see cref="false"/> if not.</returns>
+        /// <returns><see langword="true"/> if keyboard is shown, <see langword="false"/> if not.</returns>
         bool IsKeyboardShown();
     }
 }

@@ -273,7 +273,6 @@ namespace OpenQA.Selenium.Appium
         /// <param name="commandType">type of command (get/post/delete)</param>
         /// <param name="command">Command</param>
         /// <param name="apiEndpoint">api endpoint</param>
-        /// <summary>
         public AppiumCommand(string commandType, string command, string apiEndpoint)
         {
             CommandType = commandType;
